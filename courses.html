@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaze Forge</title>
+</head>
+<style>
+    *{
+  margin:0;
+  padding:0;
+}
+body{
+  display:flex;
+}
+aside{
+  width:40vh;
+}
+nav{
+  margin:15px;
+}
+input[type=radio]
+{
+  display:none;
+}
+label,input[type=radio]:checked+label{
+  border-radius:50%;
+  display:block;
+  height:50px;
+  width:50px;
+  padding:7px;
+  background: #A9ADFF;
+  box-shadow: 4px 3px 7px 0px rgba(0, 0, 0, 0.25), 4px 4px 5px 0px rgba(255, 255, 255, 0.56) inset;
+  transition: border-radius 0.2s;
+}
+label:hover{
+  border-radius:10px;
+}
+input[type=radio]:checked+label::after{
+  opacity:1;
+  border-radius:0%;
+}
+label::after{
+  content:' ';
+  display:block;
+  height:80px;
+  width:80px;
+background:url('https://drive.google.com/uc?export=view&id=1PVABmxU8kwaVXG3vS-QQzKqOui6Ku6Sc');
+  position:absolute;
+  z-index:-1;
+  background-size:80px;
+  translate:-15px -69px;
+  opacity:0;
+  border-radius:50%;
+  transition: border-radius 1s;
+}
+</style>
+<body>
+    <header></header>
+    <aside>
+        <nav>
+          <input type="radio" name="cource" id="c">
+          <label for="c">
+            <img  width="50" height="50" src="https://img.icons8.com/color/480/c-programming.png" alt="c-programming"/>
+          </label>
+          <br>
+          <input type="radio" name="cource" id="cpp">
+          <label for="cpp">
+            <img width="50" height="50" src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>
+          </label>
+          <br>
+          <input type="radio" name="cource" id="python">
+          <label for="python">
+            <img width="50" height="50" src="https://img.icons8.com/color/480/python--v1.png" alt="python--v1"/>
+          </label>
+          <br>
+          <input type="radio" name="cource" id="Design">
+          <label for="Design">
+            <img width="50" height="50" src="https://img.icons8.com/fluency/96/000000/windows10-personalization.png" alt="windows10-personalization"/>
+          </label>
+        </nav>
+      </aside>
+      <main>
+        <iframe src="https://codepen.io/kunal-upadhyay/pen/NWEjyrZ" frameborder="0"></iframe>
+      </main>
+</body>
+</html>

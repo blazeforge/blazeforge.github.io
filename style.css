@@ -3,6 +3,10 @@
    margin:0;
   padding:0;
 }
+body{
+  background-color: #011842;
+  color: white;
+}
 header{
     position: fixed;
     width: 100%;
@@ -10,8 +14,8 @@ header{
     background-color: #03112b;
     align-items: center;
     justify-content: space-between;
-    height: 15vh;
-    box-shadow:aqua 0px 1px 15px ;
+    height: 12vh;
+    box-shadow:aqua 0px 1px 10px ;
 }
 header img{
     height: 125px;
@@ -21,25 +25,50 @@ header img{
 #hdlogo{
     display:flex;
     align-items:center;
+    margin-left: 10px;
 }
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size:25px;
 }
+nav{
+  display: flex;
+  height: 100%;
+}
+nav a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: larger;
+  font-weight: bold;
+  padding-inline: 20px;
+  height: 100%;
+  z-index: 3 !important;
+}
+nav a:hover{
+  color: #ffde59;
+  background-color: rgba(255, 255, 255,0.1);
+}
 
-
-main{
+.Logo{
   background: linear-gradient(#03112b 0% 60%,aqua 95%);
   background-size: cover;
   background-attachment: fixed;
   height: 200vh;
-  
+  width: 100%;
 }
 
 #imglogo{
   min-height: 100vh;
   position: sticky;
-  top: 5px;
+  top: 15vh;
+}
+#MPL{
+  height: 700px;
+  width: 700px;
 }
 img{
   display: block;
@@ -71,9 +100,8 @@ button{
     border-radius:50%;
     display:block;
     padding:30px;
-    margin:auto;
     margin-top:20px;
-    background: #A9ADFF;
+    background-color:#3737c1;
     box-shadow: 4px 3px 7px 0px rgba(0, 0, 0, 0.25), 4px 4px 5px 0px rgba(255, 255, 255, 0.56) inset;
     transition: border-radius 0.2s;
   }
@@ -88,7 +116,7 @@ button{
     display:block;
     height:160px;
     width:160px;
-  background:url('https://drive.google.com/uc?export=view&id=1PVABmxU8kwaVXG3vS-QQzKqOui6Ku6Sc');
+    background:url('IMG/bgcd.png');
     position:absolute;
     z-index:-1;
     background-size:160px;
@@ -102,4 +130,6 @@ button{
     border-radius:0%;
     
   }
-  
+  footer{
+    bottom: 0;
+  }
