@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 *{
    margin:0;
-  padding:0;
+   padding:0;
 }
 body{
   background-color: #011842;
@@ -58,13 +58,13 @@ nav a:hover{
   background-size: cover;
   background-attachment: fixed;
   height: 200vh;
-  width: 100%;
 }
 
 #imglogo{
   min-height: 100vh;
   position: sticky;
   top: 15vh;
+  
 }
 #MPL{
   height: 700px;
@@ -131,5 +131,49 @@ button{
     
   }
   footer{
+    margin-top: 50px;
     bottom: 0;
+    background-color: #03112b;
+  }
+  footer article{
+    display: flex;
+  }
+  footer div{
+    padding-block:40px ;
+    padding-inline: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer a{
+    overflow: hidden;
+  }
+  footer a {
+    text-decoration: none;
+    border:4px aqua;
+    border-style: dashed;
+    border-radius: 50%;
+    height: 57px;
+    width: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  footer a:hover{
+    border-style:solid;
+    box-shadow: 0px 0px 7px aqua;
+  }
+  footer i{
+    color: aqua;
+
+  }
+  footer a:hover i{
+    color: white;
+    filter: drop-shadow(0px 0px 2px aqua);
+  }
+
+  footer span{
+    display: block;
+    text-align: center;
+    padding-block:5px;
   }
