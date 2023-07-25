@@ -95,9 +95,11 @@ iframe{
       </main>
 </body>
 <script>
+ 
   var f=document.getElementById("myFrame");
-  function coch() {
-    var co=document.querySelector('input[name=cource]:checked').value;
+  console.log("Kunal Upadhyay");
+  
+  function frch(co) {
     console.log(co);
     if (co=="c"){
       f.src = "cource/C.html"
@@ -108,8 +110,18 @@ iframe{
     else if (co=='python') {
       f.src = "cource/PYTHON.html"
     }
-    
-    
   }
+
+  function coch(){
+    let co =document.querySelector('input[name=cource]:checked').value;
+    frch(co)
+  }
+
+  const cov=window.location.search;
+  const urlp = new URLSearchParams(cov);
+  let p1=urlp.get('icourse');
+  document.getElementById(p1).checked=true;
+  frch(p1)
+
 </script>
 </html>
